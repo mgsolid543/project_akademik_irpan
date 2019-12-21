@@ -39,6 +39,7 @@ Partial Class FormUtama
         Me.KHSNilaiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SemuaMahasiswaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SemuaDosenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RuanganToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -53,7 +54,7 @@ Partial Class FormUtama
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MahasiswaToolStripMenuItem, Me.DosenToolStripMenuItem, Me.MataKuliahToolStripMenuItem, Me.ProgramStudiToolStripMenuItem, Me.ToolStripMenuItem1, Me.ToolStripMenuItem3, Me.KeluarToolStripMenuItem1})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MahasiswaToolStripMenuItem, Me.DosenToolStripMenuItem, Me.MataKuliahToolStripMenuItem, Me.RuanganToolStripMenuItem, Me.ProgramStudiToolStripMenuItem, Me.ToolStripMenuItem1, Me.ToolStripMenuItem3, Me.KeluarToolStripMenuItem1})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
@@ -149,6 +150,12 @@ Partial Class FormUtama
         Me.SemuaDosenToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
         Me.SemuaDosenToolStripMenuItem.Text = "Semua Dosen"
         '
+        'RuanganToolStripMenuItem
+        '
+        Me.RuanganToolStripMenuItem.Name = "RuanganToolStripMenuItem"
+        Me.RuanganToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RuanganToolStripMenuItem.Text = "Ruangan"
+        '
         'FormUtama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -184,5 +191,6 @@ Partial Class FormUtama
     Friend WithEvents KHSNilaiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SemuaMahasiswaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SemuaDosenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents RuanganToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
