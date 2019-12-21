@@ -164,6 +164,7 @@ Partial Class FormUtama
         Me.ControlBox = False
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "FormUtama"
         Me.Text = "Sistem Informasi Akademik"
