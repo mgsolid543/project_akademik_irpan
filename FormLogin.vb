@@ -37,8 +37,8 @@ Public Class FormLogin
                 Me.Hide()
             End If
             rdr.Close()
-        Catch ex As Exception
-            Throw New Exception(ex.Message.ToString())
+        Catch sqlEx As MySqlException
+            Throw New Exception(sqlEx.Message.ToString())
         End Try
     End Sub
 End Class
