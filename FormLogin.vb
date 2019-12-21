@@ -34,6 +34,7 @@ Public Class FormLogin
                 TextBoxPassword.Text = ""
                 TextBoxUsername.Focus()
             Else
+                MsgBox("Login Sukses!", MsgBoxStyle.OkOnly, "Login")
                 FormUtama.Show()
                 Me.Hide()
             End If
@@ -42,4 +43,10 @@ Public Class FormLogin
             Throw New Exception(sqlEx.Message.ToString())
         End Try
     End Sub
+
+    Private Sub TextBoxPassword_Leave(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBoxPassword.Leave
+        ButtonMasuk.Enabled = True
+        ButtonMasuk.Focus()
+    End Sub
+  
 End Class
