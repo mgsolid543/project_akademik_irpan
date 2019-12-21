@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class FormLogin
+    Dim conn As New AksesData.KoneksiDB
 
     Private Sub ButtonKeluar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonKeluar.Click
         End
@@ -20,7 +21,7 @@ Public Class FormLogin
     Private Sub ButtonMasuk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonMasuk.Click
         Try
             Dim strSQL As String = "select * from login where username = @t_us and password = @t_ps"
-            Dim mycommand As New MySqlCommand(strSQL, Koneksi)
+            Dim mycommand As New MySqlCommand(strSQL, conn.open)
 
             mycommand.Parameters.Add("t_us", MySqlDbType.Text).Value = TextBoxUsername.Text
             mycommand.Parameters.Add("t_ps", MySqlDbType.Text).Value = TextBoxPassword.Text
@@ -28,7 +29,7 @@ Public Class FormLogin
             Dim rdr As MySqlDataReader = mycommand.ExecuteReader
 
             If rdr.Read = False Then
-                MsgBox("Data tidak ada!!!", vbYes, "Login")
+                MsgBox("Username / Password Anda salah!!!", vbYes, "Login")
                 TextBoxUsername.Text = ""
                 TextBoxPassword.Text = ""
                 TextBoxUsername.Focus()
