@@ -9,6 +9,8 @@ Module ModuleKoneksi
     Public DA As New MySqlDataAdapter
     Public dataset As New MySqlCommand
 
+    Dim muser As New MySqlCommand
+
     Public Sub bukaDB()
         Koneksi = New MySqlConnection
         Koneksi.ConnectionString = "server=localhost;userid=root;password=;dataabase=dbakademik"
