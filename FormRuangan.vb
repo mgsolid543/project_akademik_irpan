@@ -83,4 +83,37 @@ Public Class FormRuangan
         Call isiGrid()
         ubah()
     End Sub
+
+    Private Sub ButtonTambah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonTambah.Click
+        Call tambah()
+    End Sub
+
+    Private Sub ButtonSimpan_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonSimpan.Click
+        Call bukaDB()
+        CMD = New MySqlCommand("select koderuangan from ruangan where koderuangan = '" & TextBoxKodeRuangan.Text & "'", Koneksi)
+        RD = CMD.ExecuteReader
+        RD.Read()
+
+        If ButtonTambah.Enabled = False Then
+            If RD.HasRows Then
+                MsgBox("Maaf, Data dengan Kode Ruangan tersebut telah ada", MsgBoxStyle.Exclamation, "Peringatan")
+            Else
+                If (MessageBox.Show("Simpan data ruangan baru?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question)) = DialogResult.Yes Then
+                    Call bukaDB()
+                    simpan = "insert into ruangan (koderuangan, namaruangan) values ('" & TextBoxKodeRuangan.Text & "', '" & TextBoxNamaRuangan.Text & "')"
+
+                    CMD = New MySqlCommand(simpan, Koneksi)
+
+                    CMD.ExecuteNonQuery()
+
+                    Call isiGrid()
+                    Call batal()
+                    TextBoxKodeRuangan.Focus()
+
+                    MsgBox("Data ruangan sudah tersimpan.", MsgBoxStyle.Information, "Info")
+                    RD.Close()
+                End If
+            End If
+        End If
+    End Sub
 End Class
