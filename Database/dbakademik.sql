@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 28, 2019 at 07:10 AM
+-- Generation Time: Dec 28, 2019 at 07:17 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -45,6 +45,20 @@ INSERT INTO `dosen` (`nip`, `nama`, `alamat`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `jadwal`
+--
+
+CREATE TABLE `jadwal` (
+  `idjadwal` int(11) UNSIGNED NOT NULL,
+  `matakuliah` varchar(30) NOT NULL,
+  `dosen` varchar(50) NOT NULL,
+  `ruangan` varchar(30) NOT NULL,
+  `waktu` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `jurusan`
 --
 
@@ -60,6 +74,32 @@ CREATE TABLE `jurusan` (
 INSERT INTO `jurusan` (`kodejurusan`, `namajurusan`) VALUES
 ('SIS1', 'Sistem Informasi S1'),
 ('TIS1', 'Teknik Informatika S1');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `khs`
+--
+
+CREATE TABLE `khs` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `mahasiswa` varchar(30) NOT NULL,
+  `matakuliah` varchar(30) NOT NULL,
+  `nilai` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `krs`
+--
+
+CREATE TABLE `krs` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `matakuliah` varchar(30) NOT NULL,
+  `mahasiswa` varchar(30) NOT NULL,
+  `jurusan` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -156,10 +196,28 @@ ALTER TABLE `dosen`
   ADD PRIMARY KEY (`nip`);
 
 --
+-- Indexes for table `jadwal`
+--
+ALTER TABLE `jadwal`
+  ADD PRIMARY KEY (`idjadwal`);
+
+--
 -- Indexes for table `jurusan`
 --
 ALTER TABLE `jurusan`
   ADD PRIMARY KEY (`kodejurusan`);
+
+--
+-- Indexes for table `khs`
+--
+ALTER TABLE `khs`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `krs`
+--
+ALTER TABLE `krs`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `login`
@@ -184,6 +242,28 @@ ALTER TABLE `matakuliah`
 --
 ALTER TABLE `ruangan`
   ADD PRIMARY KEY (`koderuangan`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `jadwal`
+--
+ALTER TABLE `jadwal`
+  MODIFY `idjadwal` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `khs`
+--
+ALTER TABLE `khs`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `krs`
+--
+ALTER TABLE `krs`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
