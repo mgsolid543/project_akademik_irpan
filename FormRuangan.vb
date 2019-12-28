@@ -176,4 +176,8 @@ Public Class FormRuangan
             End If
         End If
     End Sub
+
+    Private Sub ButtonBatal_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonBatal.Click
+        Call batal()
+    End Sub
 End Class
