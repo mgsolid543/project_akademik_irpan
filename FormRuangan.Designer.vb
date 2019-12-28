@@ -24,8 +24,8 @@ Partial Class FormRuangan
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBoxKodeRuangan = New System.Windows.Forms.TextBox()
+        Me.TextBoxNamaRuangan = New System.Windows.Forms.TextBox()
         Me.ButtonSimpan = New System.Windows.Forms.Button()
         Me.ButtonTambah = New System.Windows.Forms.Button()
         Me.ButtonUbah = New System.Windows.Forms.Button()
@@ -39,7 +39,7 @@ Partial Class FormRuangan
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 27)
+        Me.Label1.Location = New System.Drawing.Point(12, 20)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(79, 13)
         Me.Label1.TabIndex = 0
@@ -48,25 +48,25 @@ Partial Class FormRuangan
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(13, 58)
+        Me.Label2.Location = New System.Drawing.Point(12, 51)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(82, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Nama Ruangan"
         '
-        'TextBox1
+        'TextBoxKodeRuangan
         '
-        Me.TextBox1.Location = New System.Drawing.Point(115, 20)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.TextBoxKodeRuangan.Location = New System.Drawing.Point(114, 13)
+        Me.TextBoxKodeRuangan.Name = "TextBoxKodeRuangan"
+        Me.TextBoxKodeRuangan.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxKodeRuangan.TabIndex = 2
         '
-        'TextBox2
+        'TextBoxNamaRuangan
         '
-        Me.TextBox2.Location = New System.Drawing.Point(115, 51)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(238, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.TextBoxNamaRuangan.Location = New System.Drawing.Point(114, 44)
+        Me.TextBoxNamaRuangan.Name = "TextBoxNamaRuangan"
+        Me.TextBoxNamaRuangan.Size = New System.Drawing.Size(238, 20)
+        Me.TextBoxNamaRuangan.TabIndex = 3
         '
         'ButtonSimpan
         '
@@ -143,8 +143,8 @@ Partial Class FormRuangan
         Me.Controls.Add(Me.ButtonUbah)
         Me.Controls.Add(Me.ButtonTambah)
         Me.Controls.Add(Me.ButtonSimpan)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TextBoxNamaRuangan)
+        Me.Controls.Add(Me.TextBoxKodeRuangan)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -158,8 +158,8 @@ Partial Class FormRuangan
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxKodeRuangan As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxNamaRuangan As System.Windows.Forms.TextBox
     Friend WithEvents ButtonSimpan As System.Windows.Forms.Button
     Friend WithEvents ButtonTambah As System.Windows.Forms.Button
     Friend WithEvents ButtonUbah As System.Windows.Forms.Button
