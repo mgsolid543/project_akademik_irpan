@@ -9,4 +9,10 @@
         login.MdiParent = Me
         login.Show()
     End Sub
+
+    Private Sub RuanganToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RuanganToolStripMenuItem.Click
+        Dim ruangan = New FormRuangan
+        ruangan.MdiParent = Me
+        ruangan.Show()
+    End Sub
 End Class

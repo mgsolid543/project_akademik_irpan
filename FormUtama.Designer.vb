@@ -40,6 +40,7 @@ Partial Class FormUtama
         Me.SemuaDosenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.KeluarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InfoAplikasiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.JadwalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -107,7 +108,7 @@ Partial Class FormUtama
         '
         'TransaksiToolStripMenuItem
         '
-        Me.TransaksiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.KRSToolStripMenuItem, Me.KHSNilaiToolStripMenuItem})
+        Me.TransaksiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.JadwalToolStripMenuItem, Me.KRSToolStripMenuItem, Me.KHSNilaiToolStripMenuItem})
         Me.TransaksiToolStripMenuItem.Name = "TransaksiToolStripMenuItem"
         Me.TransaksiToolStripMenuItem.Size = New System.Drawing.Size(68, 20)
         Me.TransaksiToolStripMenuItem.Text = "Transaksi"
@@ -115,13 +116,13 @@ Partial Class FormUtama
         'KRSToolStripMenuItem
         '
         Me.KRSToolStripMenuItem.Name = "KRSToolStripMenuItem"
-        Me.KRSToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.KRSToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.KRSToolStripMenuItem.Text = "KRS"
         '
         'KHSNilaiToolStripMenuItem
         '
         Me.KHSNilaiToolStripMenuItem.Name = "KHSNilaiToolStripMenuItem"
-        Me.KHSNilaiToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.KHSNilaiToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.KHSNilaiToolStripMenuItem.Text = "KHS (Nilai)"
         '
         'LaporanToolStripMenuItem
@@ -155,6 +156,12 @@ Partial Class FormUtama
         Me.InfoAplikasiToolStripMenuItem.Name = "InfoAplikasiToolStripMenuItem"
         Me.InfoAplikasiToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.InfoAplikasiToolStripMenuItem.Text = "Info Aplikasi"
+        '
+        'JadwalToolStripMenuItem
+        '
+        Me.JadwalToolStripMenuItem.Name = "JadwalToolStripMenuItem"
+        Me.JadwalToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.JadwalToolStripMenuItem.Text = "Jadwal"
         '
         'FormUtama
         '
@@ -193,5 +200,6 @@ Partial Class FormUtama
     Friend WithEvents SemuaMahasiswaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SemuaDosenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RuanganToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents JadwalToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

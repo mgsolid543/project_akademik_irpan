@@ -100,6 +100,12 @@
     <Compile Include="FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormRuangan.Designer.vb">
+      <DependentUpon>FormRuangan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRuangan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormUtama.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRuangan.resx">
+      <DependentUpon>FormRuangan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUtama.resx">
       <DependentUpon>FormUtama.vb</DependentUpon>
