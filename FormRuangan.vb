@@ -116,4 +116,42 @@ Public Class FormRuangan
             End If
         End If
     End Sub
+
+    Private Sub ButtonUbah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonUbah.Click
+        bukaDB()
+        Try
+            Using conn As New MySqlConnection(Koneksi.ConnectionString)
+                conn.Open()
+                Dim command As New MySqlCommand("update ruangan set koderuangan=@kode_ruangan, namaruangan=@nama_ruangan where koderuangan=@kode_ruangan", conn)
+
+                With command.Parameters
+                    .AddWithValue("@kode_ruangan", TextBoxKodeRuangan.Text)
+                    .AddWithValue("@nama_ruangan", TextBoxNamaRuangan.Text)
+                End With
+
+                command.ExecuteNonQuery()
+                MessageBox.Show("Data ruangan sukses tersimpan", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End Using
+        Catch ex As Exception
+            MessageBox.Show(ex.Message, "Kesalahan dalam ubah data", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+        Call isiGrid()
+        Call bersih()
+    End Sub
+
+    Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+        bukaDB()
+        CMD = New MySqlCommand("select * from ruangan where koderuangan = '" & TextBoxKodeRuangan.Text & "'", Koneksi)
+
+        Try
+            Dim gridbaris As DataGridViewRow = DataGridView1.Rows(e.RowIndex)
+
+            TextBoxKodeRuangan.Text = gridbaris.Cells(0).Value.ToString
+            TextBoxNamaRuangan.Text = gridbaris.Cells(1).Value.ToString
+        Catch ex As Exception
+            MsgBox("Pilih data ruangan yang ada di dalam tabel", MsgBoxStyle.Information, "Info")
+        End Try
+    End Sub
+
+  
 End Class
