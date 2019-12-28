@@ -15,4 +15,10 @@
         ruangan.MdiParent = Me
         ruangan.Show()
     End Sub
+
+    Private Sub MahasiswaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MahasiswaToolStripMenuItem.Click
+        Dim mahasiswa = New FormMahasiswa
+        mahasiswa.MdiParent = Me
+        mahasiswa.Show()
+    End Sub
 End Class
