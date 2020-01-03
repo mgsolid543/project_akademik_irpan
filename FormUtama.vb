@@ -21,4 +21,10 @@
         mahasiswa.MdiParent = Me
         mahasiswa.Show()
     End Sub
+
+    Private Sub DosenToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DosenToolStripMenuItem.Click
+        Dim dosen = New FormDosen
+        dosen.MdiParent = Me
+        dosen.Show()
+    End Sub
 End Class

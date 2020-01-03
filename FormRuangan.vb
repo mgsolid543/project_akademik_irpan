@@ -1,7 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
 
-
-
 Public Class FormRuangan
 
     Public strSQL As String

@@ -127,7 +127,7 @@ Public Class FormMahasiswa
     End Sub
 
     Private Sub ButtonUbah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonUbah.Click
-        bukaDB()
+        Call bukaDB()
         Try
             Using conn As New MySqlConnection(Koneksi.ConnectionString)
                 conn.Open()
@@ -168,7 +168,7 @@ Public Class FormMahasiswa
                     Call isiGrid()
                     Call bersih()
                     TextBoxNIM.Focus()
-                    MessageBox.Show("Data ruangan berhasil dihapus", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    MessageBox.Show("Data mahasiswa berhasil dihapus", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 End If
             End If
         End If
@@ -191,6 +191,4 @@ Public Class FormMahasiswa
             MsgBox("Pilih data mahasiswa yang ada di dalam tabel", MsgBoxStyle.Information, "Info")
         End Try
     End Sub
-
-   
 End Class

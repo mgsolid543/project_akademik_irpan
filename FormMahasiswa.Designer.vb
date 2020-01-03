@@ -172,7 +172,7 @@ Partial Class FormMahasiswa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(506, 377)
+        Me.ClientSize = New System.Drawing.Size(505, 356)
         Me.ControlBox = False
         Me.Controls.Add(Me.ButtonKeluar)
         Me.Controls.Add(Me.ButtonBatal)
