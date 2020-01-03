@@ -116,19 +116,19 @@ Partial Class FormUtama
         'JadwalToolStripMenuItem
         '
         Me.JadwalToolStripMenuItem.Name = "JadwalToolStripMenuItem"
-        Me.JadwalToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.JadwalToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.JadwalToolStripMenuItem.Text = "Jadwal"
         '
         'KRSToolStripMenuItem
         '
         Me.KRSToolStripMenuItem.Name = "KRSToolStripMenuItem"
-        Me.KRSToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.KRSToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.KRSToolStripMenuItem.Text = "KRS"
         '
         'KHSNilaiToolStripMenuItem
         '
         Me.KHSNilaiToolStripMenuItem.Name = "KHSNilaiToolStripMenuItem"
-        Me.KHSNilaiToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.KHSNilaiToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.KHSNilaiToolStripMenuItem.Text = "KHS (Nilai)"
         '
         'LaporanToolStripMenuItem

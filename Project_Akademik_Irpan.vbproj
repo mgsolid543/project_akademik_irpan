@@ -158,11 +158,17 @@
     <EmbeddedResource Include="FormDosen.resx">
       <DependentUpon>FormDosen.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormJurusan.resx">
+      <DependentUpon>FormJurusan.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMahasiswa.resx">
       <DependentUpon>FormMahasiswa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMataKuliah.resx">
+      <DependentUpon>FormMataKuliah.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRuangan.resx">
       <DependentUpon>FormRuangan.vb</DependentUpon>

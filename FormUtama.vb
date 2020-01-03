@@ -27,4 +27,10 @@
         dosen.MdiParent = Me
         dosen.Show()
     End Sub
+
+    Private Sub MataKuliahToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MataKuliahToolStripMenuItem.Click
+        Dim matakuliah = New FormMataKuliah
+        matakuliah.MdiParent = Me
+        matakuliah.Show()
+    End Sub
 End Class

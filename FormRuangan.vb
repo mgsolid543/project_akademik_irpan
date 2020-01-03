@@ -118,7 +118,7 @@ Public Class FormRuangan
     End Sub
 
     Private Sub ButtonUbah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonUbah.Click
-        bukaDB()
+        Call bukaDB()
         Try
             Using conn As New MySqlConnection(Koneksi.ConnectionString)
                 conn.Open()
