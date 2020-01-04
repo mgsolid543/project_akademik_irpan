@@ -51,4 +51,16 @@
         reportSemuaMahasiswa.MdiParent = Me
         reportSemuaMahasiswa.Show()
     End Sub
+
+    Private Sub MahasiswaNIMTertentuToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MahasiswaNIMTertentuToolStripMenuItem.Click
+        Dim reportMahasiswaNIM = New FormReportNIMMahasiswa
+        reportMahasiswaNIM.MdiParent = Me
+        reportMahasiswaNIM.Show()
+    End Sub
+
+    Private Sub DosenNIPTertentuToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DosenNIPTertentuToolStripMenuItem.Click
+        Dim reportDosenNIP = New FormReportDosenNIPTertentu
+        reportDosenNIP.MdiParent = Me
+        reportDosenNIP.Show()
+    End Sub
 End Class

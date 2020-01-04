@@ -115,6 +115,18 @@
   <ItemGroup>
     <Compile Include="AksesData\DataControl.vb" />
     <Compile Include="AksesData\KoneksiDB.vb" />
+    <Compile Include="CrystalReportDosenNIPTertentu.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportDosenNIPTertentu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportNIMMahasiswa.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportNIMMahasiswa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CrystalReportSemuaMahasiswa.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -157,6 +169,18 @@
     <Compile Include="FormMataKuliah.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormReportDosenNIPTertentu.Designer.vb">
+      <DependentUpon>FormReportDosenNIPTertentu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportDosenNIPTertentu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportNIMMahasiswa.Designer.vb">
+      <DependentUpon>FormReportNIMMahasiswa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportNIMMahasiswa.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormReportSemuaMahasiswa.Designer.vb">
       <DependentUpon>FormReportSemuaMahasiswa.vb</DependentUpon>
     </Compile>
@@ -194,6 +218,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CrystalReportDosenNIPTertentu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportDosenNIPTertentu.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportNIMMahasiswa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportNIMMahasiswa.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrystalReportSemuaMahasiswa.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReportSemuaMahasiswa.vb</LastGenOutput>
@@ -215,6 +247,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMataKuliah.resx">
       <DependentUpon>FormMataKuliah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportDosenNIPTertentu.resx">
+      <DependentUpon>FormReportDosenNIPTertentu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportNIMMahasiswa.resx">
+      <DependentUpon>FormReportNIMMahasiswa.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormReportSemuaMahasiswa.resx">
       <DependentUpon>FormReportSemuaMahasiswa.vb</DependentUpon>
