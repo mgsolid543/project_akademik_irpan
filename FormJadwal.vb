@@ -9,7 +9,7 @@ Public Class FormJadwal
     Public ds As DataSet
     Dim conn As AksesData.KoneksiDB
 
-    Public simpan As String
+    Public simpan, ubah As String
 
     Private Sub FormJadwal_FormClosed(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
         FormUtama.Enabled = True
@@ -275,15 +275,41 @@ Public Class FormJadwal
             Dim gridbaris As DataGridViewRow = DataGridView1.Rows(e.RowIndex)
 
             TextBoxKode.Text = gridbaris.Cells(0).Value.ToString
-            ComboBoxDosen.Text = gridbaris.Cells(1).Value.ToString
-            ComboBoxMataKuliah.Text = gridbaris.Cells(2).Value.ToString
+            ComboBoxMataKuliah.Text = gridbaris.Cells(1).Value.ToString
+            ComboBoxDosen.Text = gridbaris.Cells(2).Value.ToString
             ComboBoxRuangan.Text = gridbaris.Cells(3).Value.ToString
+
             TextBoxWaktu.Text = gridbaris.Cells(4).Value.ToString
 
 
         Catch ex As Exception
             MsgBox("Pilih data jadwal yang ada di dalam tabel", MsgBoxStyle.Information, "Info")
         End Try
+    End Sub
+
+    
+    Private Sub ButtonUbah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonUbah.Click
+        Call bukaDB()
+        Try
+            Using conn As New MySqlConnection(Koneksi.ConnectionString)
+                conn.Open()
+
+                ubah = "update jadwal set kodejadwal = '" & TextBoxKode.Text & "'," &
+                                "matakuliah = '" & ComboBoxMataKuliah.Text & "'," &
+                                "dosen = '" & ComboBoxDosen.Text & "'," &
+                                "ruangan = '" & ComboBoxRuangan.Text & "'," &
+                                "waktu = '" & TextBoxWaktu.Text & "'" &
+                                "where kodejadwal = '" & TextBoxKode.Text & "'"
+
+                Dim command As New MySqlCommand(ubah, conn)
+                command.ExecuteNonQuery()
+                MessageBox.Show("Data jadwal sukses tersimpan", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End Using
+        Catch ex As Exception
+            MessageBox.Show(ex.Message, "Kesalahan dalam ubah data", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+        Call displayData()
+        Call bersih()
     End Sub
 
     
