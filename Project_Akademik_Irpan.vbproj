@@ -100,6 +100,12 @@
     <Compile Include="FormDosen.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormJadwal.Designer.vb">
+      <DependentUpon>FormJadwal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormJadwal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormJurusan.Designer.vb">
       <DependentUpon>FormJurusan.vb</DependentUpon>
     </Compile>
@@ -157,6 +163,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FormDosen.resx">
       <DependentUpon>FormDosen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJadwal.resx">
+      <DependentUpon>FormJadwal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormJurusan.resx">
       <DependentUpon>FormJurusan.vb</DependentUpon>

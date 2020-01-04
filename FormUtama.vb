@@ -33,4 +33,16 @@
         matakuliah.MdiParent = Me
         matakuliah.Show()
     End Sub
+
+    Private Sub ProgramStudiToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProgramStudiToolStripMenuItem.Click
+        Dim jurusan = New FormJurusan
+        jurusan.MdiParent = Me
+        jurusan.Show()
+    End Sub
+
+    Private Sub JadwalToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles JadwalToolStripMenuItem.Click
+        Dim jadwal = New FormJadwal
+        jadwal.MdiParent = Me
+        jadwal.Show()
+    End Sub
 End Class
