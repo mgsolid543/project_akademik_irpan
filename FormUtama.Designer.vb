@@ -63,47 +63,47 @@ Partial Class FormUtama
         'MahasiswaToolStripMenuItem
         '
         Me.MahasiswaToolStripMenuItem.Name = "MahasiswaToolStripMenuItem"
-        Me.MahasiswaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MahasiswaToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.MahasiswaToolStripMenuItem.Text = "Mahasiswa"
         '
         'DosenToolStripMenuItem
         '
         Me.DosenToolStripMenuItem.Name = "DosenToolStripMenuItem"
-        Me.DosenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DosenToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.DosenToolStripMenuItem.Text = "Dosen"
         '
         'MataKuliahToolStripMenuItem
         '
         Me.MataKuliahToolStripMenuItem.Name = "MataKuliahToolStripMenuItem"
-        Me.MataKuliahToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MataKuliahToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.MataKuliahToolStripMenuItem.Text = "Mata Kuliah"
         '
         'RuanganToolStripMenuItem
         '
         Me.RuanganToolStripMenuItem.Name = "RuanganToolStripMenuItem"
-        Me.RuanganToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RuanganToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.RuanganToolStripMenuItem.Text = "Ruangan"
         '
         'ProgramStudiToolStripMenuItem
         '
         Me.ProgramStudiToolStripMenuItem.Name = "ProgramStudiToolStripMenuItem"
-        Me.ProgramStudiToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ProgramStudiToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.ProgramStudiToolStripMenuItem.Text = "Program Studi"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(147, 6)
         '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(147, 6)
         '
         'KeluarToolStripMenuItem1
         '
         Me.KeluarToolStripMenuItem1.Name = "KeluarToolStripMenuItem1"
-        Me.KeluarToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.KeluarToolStripMenuItem1.Size = New System.Drawing.Size(150, 22)
         Me.KeluarToolStripMenuItem1.Text = "Log Out"
         '
         'TransaksiToolStripMenuItem
@@ -116,19 +116,19 @@ Partial Class FormUtama
         'JadwalToolStripMenuItem
         '
         Me.JadwalToolStripMenuItem.Name = "JadwalToolStripMenuItem"
-        Me.JadwalToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.JadwalToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.JadwalToolStripMenuItem.Text = "Jadwal"
         '
         'KRSToolStripMenuItem
         '
         Me.KRSToolStripMenuItem.Name = "KRSToolStripMenuItem"
-        Me.KRSToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.KRSToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.KRSToolStripMenuItem.Text = "KRS"
         '
         'KHSNilaiToolStripMenuItem
         '
         Me.KHSNilaiToolStripMenuItem.Name = "KHSNilaiToolStripMenuItem"
-        Me.KHSNilaiToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.KHSNilaiToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.KHSNilaiToolStripMenuItem.Text = "KHS (Nilai)"
         '
         'LaporanToolStripMenuItem

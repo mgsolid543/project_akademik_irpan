@@ -45,4 +45,10 @@
         jadwal.MdiParent = Me
         jadwal.Show()
     End Sub
+
+    Private Sub SemuaMahasiswaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SemuaMahasiswaToolStripMenuItem.Click
+        Dim reportSemuaMahasiswa = New FormReportSemuaMahasiswa
+        reportSemuaMahasiswa.MdiParent = Me
+        reportSemuaMahasiswa.Show()
+    End Sub
 End Class
