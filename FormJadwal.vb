@@ -9,7 +9,7 @@ Public Class FormJadwal
     Public ds As DataSet
     Dim conn As AksesData.KoneksiDB
 
-    Public simpan, ubah As String
+    Public simpan, ubah, hapus As String
 
     Private Sub FormJadwal_FormClosed(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
         FormUtama.Enabled = True
@@ -313,4 +313,23 @@ Public Class FormJadwal
     End Sub
 
     
+    Private Sub ButtonHapus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonHapus.Click
+        If TextBoxKode.Text = "" Then
+            MessageBox.Show("Pilih dahulu data jadwal yang akan Anda hapus pada tabel di atas!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            If TextBoxKode.Text <> "" Then
+                If MessageBox.Show("Apakah Anda yakin akan mengahapus data jadwal ini?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+                    Call bukaDB()
+                    hapus = "delete from jadwal where kodejadwal = '" & TextBoxKode.Text & "'"
+                    cmd = New MySqlCommand(hapus, Koneksi)
+
+                    cmd.ExecuteNonQuery()
+                    Call displayData()
+                    Call bersih()
+                    TextBoxKode.Focus()
+                    MessageBox.Show("Data jadwal berhasil dihapus", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                End If
+            End If
+        End If
+    End Sub
 End Class
