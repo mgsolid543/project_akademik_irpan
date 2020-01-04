@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 28, 2019 at 07:17 AM
+-- Generation Time: Jan 04, 2020 at 06:51 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -40,7 +40,8 @@ CREATE TABLE `dosen` (
 
 INSERT INTO `dosen` (`nip`, `nama`, `alamat`) VALUES
 ('001', 'Irpan Budiana', 'Jatinangor'),
-('002', 'Budi Santoso', 'Bandung');
+('002', 'Budi Santoso', 'Bandung'),
+('003', 'Iwan Setiawan', 'Bandung');
 
 -- --------------------------------------------------------
 
@@ -49,12 +50,19 @@ INSERT INTO `dosen` (`nip`, `nama`, `alamat`) VALUES
 --
 
 CREATE TABLE `jadwal` (
-  `idjadwal` int(11) UNSIGNED NOT NULL,
+  `kodejadwal` varchar(10) NOT NULL,
   `matakuliah` varchar(30) NOT NULL,
   `dosen` varchar(50) NOT NULL,
   `ruangan` varchar(30) NOT NULL,
   `waktu` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `jadwal`
+--
+
+INSERT INTO `jadwal` (`kodejadwal`, `matakuliah`, `dosen`, `ruangan`, `waktu`) VALUES
+('M02001', 'M02', '001', 'RL01', '10:00');
 
 -- --------------------------------------------------------
 
@@ -72,6 +80,7 @@ CREATE TABLE `jurusan` (
 --
 
 INSERT INTO `jurusan` (`kodejurusan`, `namajurusan`) VALUES
+('KAS1', 'Komputer Akuntansi S1'),
 ('SIS1', 'Sistem Informasi S1'),
 ('TIS1', 'Teknik Informatika S1');
 
@@ -139,8 +148,8 @@ CREATE TABLE `mahasiswa` (
 
 INSERT INTO `mahasiswa` (`nim`, `nama`, `jeniskelamin`, `alamat`) VALUES
 ('184060005', 'SITI HAPSOH', 'Perempuan', 'Bandung'),
-('184060056', 'RIKI MEIDIA 123', 'Laki-laki', 'CIREBON'),
-('184260001', 'UJANG SURYANA', 'Laki-Laki', 'Sumedang');
+('184060056', 'RIKI MEIDIA', 'Laki-laki', 'Cirebon'),
+('184260001', 'UJANG SURYANA', 'Laki-laki', 'Sumedang');
 
 -- --------------------------------------------------------
 
@@ -159,8 +168,9 @@ CREATE TABLE `matakuliah` (
 --
 
 INSERT INTO `matakuliah` (`kodemk`, `namamk`, `sks`) VALUES
-('M01', 'Algoritma Pemrograman', 3),
-('M02', 'Pemrograman Visual', 2);
+('M02', 'Pemrograman Visual', 2),
+('M03', 'Pendidikan Kewarganegaraan', 2),
+('M04', 'Algoritma Pemrograman', 3);
 
 -- --------------------------------------------------------
 
@@ -183,7 +193,9 @@ INSERT INTO `ruangan` (`koderuangan`, `namaruangan`) VALUES
 ('R03', 'Ruang 3'),
 ('R04', 'Ruang 4'),
 ('R05', 'Ruang 5'),
-('RL02', 'Ruang Lab 02');
+('RL01', 'Ruang Lab 01'),
+('RL02', 'Ruang Lab 02'),
+('RL03', 'Ruang Lab 03');
 
 --
 -- Indexes for dumped tables
@@ -199,7 +211,7 @@ ALTER TABLE `dosen`
 -- Indexes for table `jadwal`
 --
 ALTER TABLE `jadwal`
-  ADD PRIMARY KEY (`idjadwal`);
+  ADD PRIMARY KEY (`kodejadwal`);
 
 --
 -- Indexes for table `jurusan`
@@ -246,12 +258,6 @@ ALTER TABLE `ruangan`
 --
 -- AUTO_INCREMENT for dumped tables
 --
-
---
--- AUTO_INCREMENT for table `jadwal`
---
-ALTER TABLE `jadwal`
-  MODIFY `idjadwal` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `khs`
