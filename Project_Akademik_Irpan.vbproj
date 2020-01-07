@@ -151,6 +151,18 @@
     <Compile Include="FormJurusan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormKHS.Designer.vb">
+      <DependentUpon>FormKHS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormKHS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKRS.Designer.vb">
+      <DependentUpon>FormKRS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormKRS.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormLogin.Designer.vb">
       <DependentUpon>FormLogin.vb</DependentUpon>
     </Compile>
@@ -238,6 +250,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormJurusan.resx">
       <DependentUpon>FormJurusan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKHS.resx">
+      <DependentUpon>FormKHS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKRS.resx">
+      <DependentUpon>FormKRS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>

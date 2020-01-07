@@ -63,4 +63,16 @@
         reportDosenNIP.MdiParent = Me
         reportDosenNIP.Show()
     End Sub
+
+    Private Sub KRSToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles KRSToolStripMenuItem.Click
+        Dim krs = New FormKRS
+        krs.MdiParent = Me
+        krs.Show()
+    End Sub
+
+    Private Sub KHSNilaiToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles KHSNilaiToolStripMenuItem.Click
+        Dim khs = New FormKHS
+        khs.MdiParent = Me
+        khs.Show()
+    End Sub
 End Class

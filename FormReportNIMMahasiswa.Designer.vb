@@ -32,7 +32,7 @@ Partial Class FormReportNIMMahasiswa
         '
         'ButtonSelesai
         '
-        Me.ButtonSelesai.Location = New System.Drawing.Point(477, 363)
+        Me.ButtonSelesai.Location = New System.Drawing.Point(795, 527)
         Me.ButtonSelesai.Name = "ButtonSelesai"
         Me.ButtonSelesai.Size = New System.Drawing.Size(75, 23)
         Me.ButtonSelesai.TabIndex = 0
@@ -57,9 +57,9 @@ Partial Class FormReportNIMMahasiswa
         '
         'ButtonTampilkan
         '
-        Me.ButtonTampilkan.Location = New System.Drawing.Point(429, 21)
+        Me.ButtonTampilkan.Location = New System.Drawing.Point(330, 26)
         Me.ButtonTampilkan.Name = "ButtonTampilkan"
-        Me.ButtonTampilkan.Size = New System.Drawing.Size(132, 23)
+        Me.ButtonTampilkan.Size = New System.Drawing.Size(101, 23)
         Me.ButtonTampilkan.TabIndex = 4
         Me.ButtonTampilkan.Text = "Tampilkan"
         Me.ButtonTampilkan.UseVisualStyleBackColor = True
@@ -72,20 +72,23 @@ Partial Class FormReportNIMMahasiswa
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(27, 52)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.ReportSource = Me.CrystalReportNIMMahasiswa1
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(534, 305)
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(843, 469)
         Me.CrystalReportViewer1.TabIndex = 3
         '
         'FormReportNIMMahasiswa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(573, 410)
+        Me.ClientSize = New System.Drawing.Size(882, 562)
+        Me.ControlBox = False
         Me.Controls.Add(Me.ButtonTampilkan)
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Controls.Add(Me.TextBoxNIM)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonSelesai)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FormReportNIMMahasiswa"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormReportNIMMahasiswa"
         Me.ResumeLayout(False)
         Me.PerformLayout()

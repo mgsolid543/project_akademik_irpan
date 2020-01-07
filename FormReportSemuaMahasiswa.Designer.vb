@@ -29,7 +29,7 @@ Partial Class FormReportSemuaMahasiswa
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(650, 412)
+        Me.Button1.Location = New System.Drawing.Point(797, 527)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
@@ -41,20 +41,23 @@ Partial Class FormReportSemuaMahasiswa
         Me.CrystalReportViewer1.ActiveViewIndex = 0
         Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.CrystalReportViewer1.Location = New System.Drawing.Point(30, 22)
+        Me.CrystalReportViewer1.Location = New System.Drawing.Point(12, 12)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.ReportSource = Me.CrystalReportSemuaMahasiswa1
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(686, 384)
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(860, 499)
         Me.CrystalReportViewer1.TabIndex = 1
         '
         'FormReportSemuaMahasiswa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(737, 447)
+        Me.ClientSize = New System.Drawing.Size(884, 562)
+        Me.ControlBox = False
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Controls.Add(Me.Button1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FormReportSemuaMahasiswa"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormReportSemuaMahasiswa"
         Me.ResumeLayout(False)
 

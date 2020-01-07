@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FormJadwal
+Partial Class FormKHS
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,6 +22,9 @@ Partial Class FormJadwal
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.TextBoxMahasiswa = New System.Windows.Forms.TextBox()
+        Me.TextBoxMataKuliah = New System.Windows.Forms.TextBox()
+        Me.ComboBoxMataKuliah = New System.Windows.Forms.ComboBox()
         Me.ButtonKeluar = New System.Windows.Forms.Button()
         Me.ButtonBatal = New System.Windows.Forms.Button()
         Me.ButtonHapus = New System.Windows.Forms.Button()
@@ -29,199 +32,166 @@ Partial Class FormJadwal
         Me.ButtonTambah = New System.Windows.Forms.Button()
         Me.ButtonSimpan = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.ComboBoxDosen = New System.Windows.Forms.ComboBox()
-        Me.TextBoxWaktu = New System.Windows.Forms.TextBox()
+        Me.ComboBoxMahasiswa = New System.Windows.Forms.ComboBox()
+        Me.TextBoxNilai = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBoxKode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBoxMataKuliah = New System.Windows.Forms.ComboBox()
-        Me.TextBoxMataKuliah = New System.Windows.Forms.TextBox()
-        Me.TextBoxDosen = New System.Windows.Forms.TextBox()
-        Me.TextBoxRuangan = New System.Windows.Forms.TextBox()
-        Me.ComboBoxRuangan = New System.Windows.Forms.ComboBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'TextBoxMahasiswa
+        '
+        Me.TextBoxMahasiswa.Location = New System.Drawing.Point(211, 79)
+        Me.TextBoxMahasiswa.Name = "TextBoxMahasiswa"
+        Me.TextBoxMahasiswa.Size = New System.Drawing.Size(276, 20)
+        Me.TextBoxMahasiswa.TabIndex = 53
+        '
+        'TextBoxMataKuliah
+        '
+        Me.TextBoxMataKuliah.Location = New System.Drawing.Point(211, 47)
+        Me.TextBoxMataKuliah.Name = "TextBoxMataKuliah"
+        Me.TextBoxMataKuliah.Size = New System.Drawing.Size(276, 20)
+        Me.TextBoxMataKuliah.TabIndex = 52
+        '
+        'ComboBoxMataKuliah
+        '
+        Me.ComboBoxMataKuliah.FormattingEnabled = True
+        Me.ComboBoxMataKuliah.Items.AddRange(New Object() {"Laki-laki", "Perempuan"})
+        Me.ComboBoxMataKuliah.Location = New System.Drawing.Point(84, 47)
+        Me.ComboBoxMataKuliah.Name = "ComboBoxMataKuliah"
+        Me.ComboBoxMataKuliah.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBoxMataKuliah.TabIndex = 51
+        '
         'ButtonKeluar
         '
-        Me.ButtonKeluar.Location = New System.Drawing.Point(822, 354)
+        Me.ButtonKeluar.Location = New System.Drawing.Point(812, 370)
         Me.ButtonKeluar.Name = "ButtonKeluar"
         Me.ButtonKeluar.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonKeluar.TabIndex = 30
+        Me.ButtonKeluar.TabIndex = 50
         Me.ButtonKeluar.Text = "Keluar"
         Me.ButtonKeluar.UseVisualStyleBackColor = True
         '
         'ButtonBatal
         '
-        Me.ButtonBatal.Location = New System.Drawing.Point(741, 354)
+        Me.ButtonBatal.Location = New System.Drawing.Point(731, 370)
         Me.ButtonBatal.Name = "ButtonBatal"
         Me.ButtonBatal.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonBatal.TabIndex = 29
+        Me.ButtonBatal.TabIndex = 49
         Me.ButtonBatal.Text = "Batal"
         Me.ButtonBatal.UseVisualStyleBackColor = True
         '
         'ButtonHapus
         '
-        Me.ButtonHapus.Location = New System.Drawing.Point(660, 354)
+        Me.ButtonHapus.Location = New System.Drawing.Point(650, 370)
         Me.ButtonHapus.Name = "ButtonHapus"
         Me.ButtonHapus.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonHapus.TabIndex = 28
+        Me.ButtonHapus.TabIndex = 48
         Me.ButtonHapus.Text = "Hapus"
         Me.ButtonHapus.UseVisualStyleBackColor = True
         '
         'ButtonUbah
         '
-        Me.ButtonUbah.Location = New System.Drawing.Point(579, 354)
+        Me.ButtonUbah.Location = New System.Drawing.Point(569, 370)
         Me.ButtonUbah.Name = "ButtonUbah"
         Me.ButtonUbah.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonUbah.TabIndex = 27
+        Me.ButtonUbah.TabIndex = 47
         Me.ButtonUbah.Text = "Ubah"
         Me.ButtonUbah.UseVisualStyleBackColor = True
         '
         'ButtonTambah
         '
-        Me.ButtonTambah.Location = New System.Drawing.Point(498, 354)
+        Me.ButtonTambah.Location = New System.Drawing.Point(488, 370)
         Me.ButtonTambah.Name = "ButtonTambah"
         Me.ButtonTambah.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonTambah.TabIndex = 26
+        Me.ButtonTambah.TabIndex = 46
         Me.ButtonTambah.Text = "Tambah"
         Me.ButtonTambah.UseVisualStyleBackColor = True
         '
         'ButtonSimpan
         '
-        Me.ButtonSimpan.Location = New System.Drawing.Point(417, 354)
+        Me.ButtonSimpan.Location = New System.Drawing.Point(407, 370)
         Me.ButtonSimpan.Name = "ButtonSimpan"
         Me.ButtonSimpan.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonSimpan.TabIndex = 25
+        Me.ButtonSimpan.TabIndex = 45
         Me.ButtonSimpan.Text = "Simpan"
         Me.ButtonSimpan.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(19, 151)
+        Me.DataGridView1.Location = New System.Drawing.Point(9, 143)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(878, 197)
-        Me.DataGridView1.TabIndex = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(878, 221)
+        Me.DataGridView1.TabIndex = 44
         '
-        'ComboBoxDosen
+        'ComboBoxMahasiswa
         '
-        Me.ComboBoxDosen.FormattingEnabled = True
-        Me.ComboBoxDosen.Location = New System.Drawing.Point(94, 63)
-        Me.ComboBoxDosen.Name = "ComboBoxDosen"
-        Me.ComboBoxDosen.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBoxDosen.TabIndex = 23
+        Me.ComboBoxMahasiswa.FormattingEnabled = True
+        Me.ComboBoxMahasiswa.Location = New System.Drawing.Point(84, 79)
+        Me.ComboBoxMahasiswa.Name = "ComboBoxMahasiswa"
+        Me.ComboBoxMahasiswa.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBoxMahasiswa.TabIndex = 43
         '
-        'TextBoxWaktu
+        'TextBoxNilai
         '
-        Me.TextBoxWaktu.Location = New System.Drawing.Point(94, 121)
-        Me.TextBoxWaktu.Name = "TextBoxWaktu"
-        Me.TextBoxWaktu.Size = New System.Drawing.Size(121, 20)
-        Me.TextBoxWaktu.TabIndex = 22
+        Me.TextBoxNilai.Location = New System.Drawing.Point(84, 106)
+        Me.TextBoxNilai.Name = "TextBoxNilai"
+        Me.TextBoxNilai.Size = New System.Drawing.Size(121, 20)
+        Me.TextBoxNilai.TabIndex = 42
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(17, 124)
+        Me.Label4.Location = New System.Drawing.Point(7, 109)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 13)
-        Me.Label4.TabIndex = 21
-        Me.Label4.Text = "Waktu"
+        Me.Label4.Size = New System.Drawing.Size(27, 13)
+        Me.Label4.TabIndex = 41
+        Me.Label4.Text = "Nilai"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(16, 66)
+        Me.Label3.Location = New System.Drawing.Point(6, 82)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(38, 13)
-        Me.Label3.TabIndex = 20
-        Me.Label3.Text = "Dosen"
+        Me.Label3.Size = New System.Drawing.Size(60, 13)
+        Me.Label3.TabIndex = 40
+        Me.Label3.Text = "Mahasiswa"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(17, 34)
+        Me.Label2.Location = New System.Drawing.Point(7, 50)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(63, 13)
-        Me.Label2.TabIndex = 18
+        Me.Label2.TabIndex = 39
         Me.Label2.Text = "Mata Kuliah"
         '
         'TextBoxKode
         '
-        Me.TextBoxKode.Location = New System.Drawing.Point(94, 5)
+        Me.TextBoxKode.Location = New System.Drawing.Point(84, 21)
         Me.TextBoxKode.Name = "TextBoxKode"
         Me.TextBoxKode.Size = New System.Drawing.Size(121, 20)
-        Me.TextBoxKode.TabIndex = 17
+        Me.TextBoxKode.TabIndex = 38
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(17, 5)
+        Me.Label1.Location = New System.Drawing.Point(7, 21)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(32, 13)
-        Me.Label1.TabIndex = 16
+        Me.Label1.TabIndex = 37
         Me.Label1.Text = "Kode"
         '
-        'ComboBoxMataKuliah
-        '
-        Me.ComboBoxMataKuliah.FormattingEnabled = True
-        Me.ComboBoxMataKuliah.Items.AddRange(New Object() {"Laki-laki", "Perempuan"})
-        Me.ComboBoxMataKuliah.Location = New System.Drawing.Point(94, 31)
-        Me.ComboBoxMataKuliah.Name = "ComboBoxMataKuliah"
-        Me.ComboBoxMataKuliah.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBoxMataKuliah.TabIndex = 31
-        '
-        'TextBoxMataKuliah
-        '
-        Me.TextBoxMataKuliah.Location = New System.Drawing.Point(221, 31)
-        Me.TextBoxMataKuliah.Name = "TextBoxMataKuliah"
-        Me.TextBoxMataKuliah.Size = New System.Drawing.Size(276, 20)
-        Me.TextBoxMataKuliah.TabIndex = 32
-        '
-        'TextBoxDosen
-        '
-        Me.TextBoxDosen.Location = New System.Drawing.Point(221, 63)
-        Me.TextBoxDosen.Name = "TextBoxDosen"
-        Me.TextBoxDosen.Size = New System.Drawing.Size(276, 20)
-        Me.TextBoxDosen.TabIndex = 33
-        '
-        'TextBoxRuangan
-        '
-        Me.TextBoxRuangan.Location = New System.Drawing.Point(220, 91)
-        Me.TextBoxRuangan.Name = "TextBoxRuangan"
-        Me.TextBoxRuangan.Size = New System.Drawing.Size(276, 20)
-        Me.TextBoxRuangan.TabIndex = 36
-        '
-        'ComboBoxRuangan
-        '
-        Me.ComboBoxRuangan.FormattingEnabled = True
-        Me.ComboBoxRuangan.Location = New System.Drawing.Point(94, 90)
-        Me.ComboBoxRuangan.Name = "ComboBoxRuangan"
-        Me.ComboBoxRuangan.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBoxRuangan.TabIndex = 35
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(17, 93)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(51, 13)
-        Me.Label5.TabIndex = 34
-        Me.Label5.Text = "Ruangan"
-        '
-        'FormJadwal
+        'FormKHS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(902, 389)
+        Me.ClientSize = New System.Drawing.Size(895, 409)
         Me.ControlBox = False
-        Me.Controls.Add(Me.TextBoxRuangan)
-        Me.Controls.Add(Me.ComboBoxRuangan)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBoxDosen)
+        Me.Controls.Add(Me.TextBoxMahasiswa)
         Me.Controls.Add(Me.TextBoxMataKuliah)
         Me.Controls.Add(Me.ComboBoxMataKuliah)
         Me.Controls.Add(Me.ButtonKeluar)
@@ -231,22 +201,25 @@ Partial Class FormJadwal
         Me.Controls.Add(Me.ButtonTambah)
         Me.Controls.Add(Me.ButtonSimpan)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.ComboBoxDosen)
-        Me.Controls.Add(Me.TextBoxWaktu)
+        Me.Controls.Add(Me.ComboBoxMahasiswa)
+        Me.Controls.Add(Me.TextBoxNilai)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBoxKode)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Name = "FormJadwal"
+        Me.Name = "FormKHS"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FormJadwal"
+        Me.Text = "FormKHS"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
+    Friend WithEvents TextBoxMahasiswa As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxMataKuliah As System.Windows.Forms.TextBox
+    Friend WithEvents ComboBoxMataKuliah As System.Windows.Forms.ComboBox
     Friend WithEvents ButtonKeluar As System.Windows.Forms.Button
     Friend WithEvents ButtonBatal As System.Windows.Forms.Button
     Friend WithEvents ButtonHapus As System.Windows.Forms.Button
@@ -254,17 +227,11 @@ Partial Class FormJadwal
     Friend WithEvents ButtonTambah As System.Windows.Forms.Button
     Friend WithEvents ButtonSimpan As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents ComboBoxDosen As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBoxWaktu As System.Windows.Forms.TextBox
+    Friend WithEvents ComboBoxMahasiswa As System.Windows.Forms.ComboBox
+    Friend WithEvents TextBoxNilai As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents TextBoxKode As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents ComboBoxMataKuliah As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBoxMataKuliah As System.Windows.Forms.TextBox
-    Friend WithEvents TextBoxDosen As System.Windows.Forms.TextBox
-    Friend WithEvents TextBoxRuangan As System.Windows.Forms.TextBox
-    Friend WithEvents ComboBoxRuangan As System.Windows.Forms.ComboBox
-    Friend WithEvents Label5 As System.Windows.Forms.Label
 End Class

@@ -29,7 +29,4 @@ Public Class FormReportDosenNIPTertentu
         CrystalReportViewer1.Refresh()
     End Sub
 
-    Private Sub FormReportDosenNIPTertentu_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

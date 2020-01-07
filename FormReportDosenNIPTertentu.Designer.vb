@@ -48,7 +48,7 @@ Partial Class FormReportDosenNIPTertentu
         '
         'ButtonTampilkan
         '
-        Me.ButtonTampilkan.Location = New System.Drawing.Point(403, 10)
+        Me.ButtonTampilkan.Location = New System.Drawing.Point(319, 8)
         Me.ButtonTampilkan.Name = "ButtonTampilkan"
         Me.ButtonTampilkan.Size = New System.Drawing.Size(107, 23)
         Me.ButtonTampilkan.TabIndex = 2
@@ -57,7 +57,7 @@ Partial Class FormReportDosenNIPTertentu
         '
         'ButtonKeluar
         '
-        Me.ButtonKeluar.Location = New System.Drawing.Point(420, 361)
+        Me.ButtonKeluar.Location = New System.Drawing.Point(758, 515)
         Me.ButtonKeluar.Name = "ButtonKeluar"
         Me.ButtonKeluar.Size = New System.Drawing.Size(107, 23)
         Me.ButtonKeluar.TabIndex = 3
@@ -72,20 +72,23 @@ Partial Class FormReportDosenNIPTertentu
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(16, 41)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.ReportSource = Me.CrystalReportDosenNIPTertentu1
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(511, 314)
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(849, 468)
         Me.CrystalReportViewer1.TabIndex = 4
         '
         'FormReportDosenNIPTertentu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(539, 396)
+        Me.ClientSize = New System.Drawing.Size(877, 550)
+        Me.ControlBox = False
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Controls.Add(Me.ButtonKeluar)
         Me.Controls.Add(Me.ButtonTampilkan)
         Me.Controls.Add(Me.TextBoxNIP)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FormReportDosenNIPTertentu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormReportDosenNIPTertentu"
         Me.ResumeLayout(False)
         Me.PerformLayout()
