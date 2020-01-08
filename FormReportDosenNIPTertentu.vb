@@ -28,5 +28,4 @@ Public Class FormReportDosenNIPTertentu
         CrystalReportViewer1.ReportSource = cryRpt
         CrystalReportViewer1.Refresh()
     End Sub
-
 End Class

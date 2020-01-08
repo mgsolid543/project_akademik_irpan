@@ -27,10 +27,5 @@ Public Class FormReportNIMMahasiswa
 
         CrystalReportViewer1.ReportSource = cryRpt
         CrystalReportViewer1.Refresh()
-
-    End Sub
-
-    Private Sub FormReportNIMMahasiswa_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
     End Sub
 End Class
