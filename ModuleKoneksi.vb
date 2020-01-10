@@ -13,7 +13,7 @@ Module ModuleKoneksi
 
     Public Sub bukaDB()
         Koneksi = New MySqlConnection
-        Koneksi.ConnectionString = "server=localhost;userid=root;password=;database=dbakademik"
+        Koneksi.ConnectionString = "server=localhost;userid=root;password=;database=dbakademik;Convert Zero Datetime=True"
         Koneksi.Open()
     End Sub
 

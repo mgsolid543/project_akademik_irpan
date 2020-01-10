@@ -249,8 +249,10 @@ Public Class FormKRS
             Else
                 If MessageBox.Show("Simpan data KRS Baru?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
                     Call bukaDB()
-                    simpan = "insert into krs(kodekrs, matakuliah, mahasiswa, jurusan) values ('" &
+                    Dim Tanggal As DateTime = DateTimePickerTanggalKRS.Value
+                    simpan = "insert into krs(kodekrs, tglkrs, matakuliah, mahasiswa, jurusan) values ('" &
                                 TextBoxKode.Text & "','" &
+                                DateTimePickerTanggalKRS.Value.ToString("yyyy-MM-dd") & "','" &
                                 ComboBoxMataKuliah.Text & "','" &
                                 ComboBoxMahasiswa.Text & "','" &
                                 ComboBoxJurusan.Text & "')"

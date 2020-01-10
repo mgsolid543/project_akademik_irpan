@@ -40,12 +40,14 @@ Partial Class FormKRS
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBoxKode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.DateTimePickerTanggalKRS = New System.Windows.Forms.DateTimePicker()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBoxJurusan
         '
-        Me.TextBoxJurusan.Location = New System.Drawing.Point(215, 95)
+        Me.TextBoxJurusan.Location = New System.Drawing.Point(211, 116)
         Me.TextBoxJurusan.Name = "TextBoxJurusan"
         Me.TextBoxJurusan.Size = New System.Drawing.Size(276, 20)
         Me.TextBoxJurusan.TabIndex = 56
@@ -53,7 +55,7 @@ Partial Class FormKRS
         'ComboBoxJurusan
         '
         Me.ComboBoxJurusan.FormattingEnabled = True
-        Me.ComboBoxJurusan.Location = New System.Drawing.Point(89, 94)
+        Me.ComboBoxJurusan.Location = New System.Drawing.Point(85, 115)
         Me.ComboBoxJurusan.Name = "ComboBoxJurusan"
         Me.ComboBoxJurusan.Size = New System.Drawing.Size(121, 21)
         Me.ComboBoxJurusan.TabIndex = 55
@@ -61,7 +63,7 @@ Partial Class FormKRS
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(12, 97)
+        Me.Label5.Location = New System.Drawing.Point(8, 118)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(44, 13)
         Me.Label5.TabIndex = 54
@@ -69,14 +71,14 @@ Partial Class FormKRS
         '
         'TextBoxMahasiswa
         '
-        Me.TextBoxMahasiswa.Location = New System.Drawing.Point(216, 67)
+        Me.TextBoxMahasiswa.Location = New System.Drawing.Point(212, 88)
         Me.TextBoxMahasiswa.Name = "TextBoxMahasiswa"
         Me.TextBoxMahasiswa.Size = New System.Drawing.Size(276, 20)
         Me.TextBoxMahasiswa.TabIndex = 53
         '
         'TextBoxMataKuliah
         '
-        Me.TextBoxMataKuliah.Location = New System.Drawing.Point(216, 35)
+        Me.TextBoxMataKuliah.Location = New System.Drawing.Point(212, 56)
         Me.TextBoxMataKuliah.Name = "TextBoxMataKuliah"
         Me.TextBoxMataKuliah.Size = New System.Drawing.Size(276, 20)
         Me.TextBoxMataKuliah.TabIndex = 52
@@ -85,7 +87,7 @@ Partial Class FormKRS
         '
         Me.ComboBoxMataKuliah.FormattingEnabled = True
         Me.ComboBoxMataKuliah.Items.AddRange(New Object() {"Laki-laki", "Perempuan"})
-        Me.ComboBoxMataKuliah.Location = New System.Drawing.Point(89, 35)
+        Me.ComboBoxMataKuliah.Location = New System.Drawing.Point(85, 56)
         Me.ComboBoxMataKuliah.Name = "ComboBoxMataKuliah"
         Me.ComboBoxMataKuliah.Size = New System.Drawing.Size(121, 21)
         Me.ComboBoxMataKuliah.TabIndex = 51
@@ -147,15 +149,15 @@ Partial Class FormKRS
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(14, 121)
+        Me.DataGridView1.Location = New System.Drawing.Point(14, 170)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(878, 231)
+        Me.DataGridView1.Size = New System.Drawing.Size(878, 182)
         Me.DataGridView1.TabIndex = 44
         '
         'ComboBoxMahasiswa
         '
         Me.ComboBoxMahasiswa.FormattingEnabled = True
-        Me.ComboBoxMahasiswa.Location = New System.Drawing.Point(89, 67)
+        Me.ComboBoxMahasiswa.Location = New System.Drawing.Point(85, 88)
         Me.ComboBoxMahasiswa.Name = "ComboBoxMahasiswa"
         Me.ComboBoxMahasiswa.Size = New System.Drawing.Size(121, 21)
         Me.ComboBoxMahasiswa.TabIndex = 43
@@ -163,7 +165,7 @@ Partial Class FormKRS
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(11, 70)
+        Me.Label3.Location = New System.Drawing.Point(7, 91)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(60, 13)
         Me.Label3.TabIndex = 40
@@ -172,7 +174,7 @@ Partial Class FormKRS
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 38)
+        Me.Label2.Location = New System.Drawing.Point(8, 59)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(63, 13)
         Me.Label2.TabIndex = 39
@@ -180,7 +182,7 @@ Partial Class FormKRS
         '
         'TextBoxKode
         '
-        Me.TextBoxKode.Location = New System.Drawing.Point(89, 9)
+        Me.TextBoxKode.Location = New System.Drawing.Point(85, 6)
         Me.TextBoxKode.Name = "TextBoxKode"
         Me.TextBoxKode.Size = New System.Drawing.Size(121, 20)
         Me.TextBoxKode.TabIndex = 38
@@ -194,12 +196,30 @@ Partial Class FormKRS
         Me.Label1.TabIndex = 37
         Me.Label1.Text = "Kode"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(8, 32)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(71, 13)
+        Me.Label4.TabIndex = 57
+        Me.Label4.Text = "Tanggal KRS"
+        '
+        'DateTimePickerTanggalKRS
+        '
+        Me.DateTimePickerTanggalKRS.Location = New System.Drawing.Point(85, 32)
+        Me.DateTimePickerTanggalKRS.Name = "DateTimePickerTanggalKRS"
+        Me.DateTimePickerTanggalKRS.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePickerTanggalKRS.TabIndex = 58
+        '
         'FormKRS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(897, 401)
         Me.ControlBox = False
+        Me.Controls.Add(Me.DateTimePickerTanggalKRS)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBoxJurusan)
         Me.Controls.Add(Me.ComboBoxJurusan)
         Me.Controls.Add(Me.Label5)
@@ -245,4 +265,6 @@ Partial Class FormKRS
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents TextBoxKode As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents DateTimePickerTanggalKRS As System.Windows.Forms.DateTimePicker
 End Class
