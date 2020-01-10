@@ -279,9 +279,13 @@ Public Class FormKRS
             Dim gridbaris As DataGridViewRow = DataGridView1.Rows(e.RowIndex)
 
             TextBoxKode.Text = gridbaris.Cells(0).Value.ToString
-            ComboBoxMataKuliah.Text = gridbaris.Cells(1).Value.ToString
-            ComboBoxMahasiswa.Text = gridbaris.Cells(2).Value.ToString
-            ComboBoxJurusan.Text = gridbaris.Cells(3).Value.ToString
+
+            DateTimePickerTanggalKRS.Value = gridbaris.Cells(1).Value
+            'Console.WriteLine(gridbaris.Cells(1).Value)
+            'DateTimePickerTanggalKRS.Value = New Date(2013, 2, 26)
+            ComboBoxMataKuliah.Text = gridbaris.Cells(2).Value.ToString
+            ComboBoxMahasiswa.Text = gridbaris.Cells(3).Value.ToString
+            ComboBoxJurusan.Text = gridbaris.Cells(4).Value.ToString
         Catch ex As Exception
             MsgBox("Pilih data KRS yang ada di dalam tabel", MsgBoxStyle.Information, "Info")
         End Try
@@ -293,10 +297,11 @@ Public Class FormKRS
             Using conn As New MySqlConnection(Koneksi.ConnectionString)
                 conn.Open()
 
-                ubah = "update krs set kodejadwal = '" & TextBoxKode.Text & "'," &
+                ubah = "update krs set kodekrs = '" & TextBoxKode.Text & "'," &
+                                "tglkrs = '" & DateTimePickerTanggalKRS.Value.ToString("yyyy-MM-dd") & "'," &
                                 "matakuliah = '" & ComboBoxMataKuliah.Text & "'," &
                                 "mahasiswa = '" & ComboBoxMahasiswa.Text & "'," &
-                                "jurusan = '" & ComboBoxJurusan.Text & "'," &
+                                "jurusan = '" & ComboBoxJurusan.Text & "' " &
                                 "where kodekrs = '" & TextBoxKode.Text & "'"
 
                 Dim command As New MySqlCommand(ubah, conn)
