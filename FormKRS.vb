@@ -279,10 +279,7 @@ Public Class FormKRS
             Dim gridbaris As DataGridViewRow = DataGridView1.Rows(e.RowIndex)
 
             TextBoxKode.Text = gridbaris.Cells(0).Value.ToString
-
             DateTimePickerTanggalKRS.Value = gridbaris.Cells(1).Value
-            'Console.WriteLine(gridbaris.Cells(1).Value)
-            'DateTimePickerTanggalKRS.Value = New Date(2013, 2, 26)
             ComboBoxMataKuliah.Text = gridbaris.Cells(2).Value.ToString
             ComboBoxMahasiswa.Text = gridbaris.Cells(3).Value.ToString
             ComboBoxJurusan.Text = gridbaris.Cells(4).Value.ToString
@@ -334,5 +331,4 @@ Public Class FormKRS
             End If
         End If
     End Sub
-
 End Class

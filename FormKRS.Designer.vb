@@ -190,7 +190,7 @@ Partial Class FormKRS
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(11, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(32, 13)
         Me.Label1.TabIndex = 37
@@ -199,7 +199,7 @@ Partial Class FormKRS
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(8, 32)
+        Me.Label4.Location = New System.Drawing.Point(7, 32)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(71, 13)
         Me.Label4.TabIndex = 57
